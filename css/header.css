@@ -6,10 +6,10 @@ header{
     box-shadow: 0px 3px 3px 0px var(--color-medium-dark);
 }
 
-.links-header{
+.links-div-header{
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .blog-name-header{
@@ -18,9 +18,20 @@ header{
     text-decoration: none;
 }
 
-.links-header a{
+.links-header{
     color: var(--color-very-dark);
     padding: 5px 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
 }
+
+.links-header:hover{
+    color: var(--color-medium-light);
+    text-decoration: underline;
+}
+
+.highlight{
+    color: var(--color-medium-light);
+    text-decoration: underline;
+}
+
