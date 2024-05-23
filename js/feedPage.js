@@ -5,6 +5,8 @@ import { doFetch } from "./doFetch.mjs";
 function generateFeedHTML (hotViewLabs) {
 
     // Create container for banner carousel section
-    const bannerCarousel = document.createElement('section');
-    bannerCarousel.classList.add('bannerCarousel')
+    const bannerCarouselSection = document.createElement('section');
+    bannerCarousel.classList.add('bannerCarouselSection')
+
+    return bannerCarouselSection;
 }
