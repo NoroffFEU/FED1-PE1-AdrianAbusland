@@ -1,5 +1,7 @@
 @import url(./header.css);
 @import url(./colors.css);
+@import url(./feedPage.css);
+@import url(./postPage.css);
 
 body{
     margin: 0;

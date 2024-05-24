@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Name | Home</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/loginAndRegisterPage.css">
+    <script defer type="module" src="registerPage.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +18,12 @@
         </div>
     </header>
     <main>
-        
+        <form id="registerForm">
+            <input type="text" id="name" name="name" required>
+            <input type="email" id="email" name="email" required>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
     </main>
 </body>
 </html>

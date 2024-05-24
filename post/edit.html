@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Name | Edit Post</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/editPostPage.css">
+    <script defer type="module" src="editPostPage.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +18,13 @@
         </div>
     </header>
     <main>
-
+        <form id="editPostForm">
+            <input type="text" id="postTitle" name="title" required>
+            <textarea id="postBody" name="body" required></textarea>
+            <input type="text" id="postMedia" name="media" required>
+            <button type="submit">Update Post</button>
+            <button type="button" id="deletePost">Delete Post</button>
+          </form>
     </main>
 </body>
 </html>

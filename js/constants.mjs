@@ -1,3 +1,4 @@
 const API_BASE_URL = 'https://v2.api.noroff.dev';
 
-export const API_BLOGPOST_URL = `${API_BASE_URL}/blog/posts/{name}`;
+// Function to generate the blog post URL
+export const getApiBlogPostUrl = `${API_BASE_URL}/blog/posts/<name>`;

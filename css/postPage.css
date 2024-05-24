@@ -1,0 +1,11 @@
+/* Add styles specific to the post page */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
