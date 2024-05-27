@@ -3,6 +3,11 @@
   --black: #2f2e2e;
   --white: #ffffff;
   --brown: #9e6031;
+  --Peach: #F0C09C;
+  --Raw-umber: #8F6C50;
+  --Coffee: #6f5543;
+  --Bistre: #2E1B12;
+  --Licorice: #1B1212;
 }
 
 * {
@@ -11,17 +16,17 @@
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--white);
+  color: var(--black);
   min-height: 100vh;
 }
 
 header,
 footer {
-  background-color: var(--white);
+  background-color: var(--Peach);
   color: var(--black);
   width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -60,11 +65,11 @@ main {
 }
 
 .headerOne {
-  color: var(--White, #fff);
+  color: var(--black);
   font-family: "Playfair Display SC";
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   text-align: center;
 }
