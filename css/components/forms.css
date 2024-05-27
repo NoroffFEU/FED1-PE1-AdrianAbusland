@@ -1,5 +1,5 @@
 .titleInput {
-  border: 2px solid var(--Blue, #316f9e);
+  border: 2px solid var(--Raw-umber);
   background: var(--White, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 481px;
@@ -12,7 +12,7 @@
 }
 
 .textInput {
-  border: 2px solid var(--Blue, #316f9e);
+  border: 2px solid var(--Raw-umber);
   background: var(--White, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 845px;
@@ -35,7 +35,7 @@
 
 .loginForms {
   padding: 15px;
-  border: 2px solid var(--brown);
+  border: 2px solid var(--Raw-umber);
   color: var(--black);
   text-align: left;
 }

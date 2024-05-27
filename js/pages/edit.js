@@ -111,11 +111,11 @@ const makeForms = (container, imageBox, blog, id) => {
   const submitButton = document.createElement("input");
   submitButton.type = "submit";
   submitButton.value = "Save";
-  submitButton.className = "blueButton";
+  submitButton.className = "buttonBig";
 
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "Delete";
-  deleteButton.className = "smallBlueButton";
+  deleteButton.className = "buttonSmall";
   deleteButton.onclick = () => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
     const result = window.confirm("Are you sure you want to delete this?");

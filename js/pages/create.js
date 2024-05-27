@@ -99,11 +99,11 @@ const makeForms = (container, imageBox) => {
   const submitButton = document.createElement("input");
   submitButton.type = "submit";
   submitButton.value = "Save";
-  submitButton.className = "blueButton";
+  submitButton.className = "buttonBig";
 
   const cancelButton = document.createElement("button");
   cancelButton.innerText = "Cancel";
-  cancelButton.className = "smallBlueButton";
+  cancelButton.className = "buttonSmall";
   cancelButton.onclick = () => {
     window.location.href = "../index.html";
   };

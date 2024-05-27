@@ -56,8 +56,8 @@ const makePage = (blogs) => {
 
   const mechContainer = document.createElement("div");
   mechContainer.className =
-    "mechContainer flex-wrap flex width-100 gap10 justify-center";
-  mechContainer.id = "mechContainer flex-wrap";
+    "mechContainer flex-col flex width-100 gap10 items-center";
+  mechContainer.id = "mechContainer";
 
   const blogPostGrid = document.createElement("div");
   blogPostGrid.className = "blogPostGridContainer grid width-100";
@@ -138,7 +138,7 @@ const makeCarousel = (carouselDiv, blogs) => {
 
     const button = document.createElement("button");
     button.innerText = "Read More";
-    button.className = "smallBlueButton";
+    button.className = "buttonSmall";
     button.addEventListener("click", () => {
       window.location.href = "post/index.html?" + blog.id;
     });
@@ -158,7 +158,7 @@ const makeBlogPostGrid = (blogs, mechContainer) => {
 
   const sortButtonSummary = document.createElement("summary");
   sortButtonSummary.innerText = "Sort By";
-  sortButtonSummary.className = "smallBlueButton list-style-none";
+  sortButtonSummary.className = "buttonSmall list-style-none";
 
   const sortButtonUl = document.createElement("ul");
   sortButtonUl.className =
@@ -178,7 +178,7 @@ const makeBlogPostGrid = (blogs, mechContainer) => {
 
   const filterButtonSummary = document.createElement("summary");
   filterButtonSummary.innerText = "Filter By";
-  filterButtonSummary.className = "smallBlueButton list-style-none";
+  filterButtonSummary.className = "buttonSmall list-style-none";
 
   const filterButtonUl = document.createElement("ul");
   filterButtonUl.className =
@@ -218,7 +218,7 @@ const makeBlogPostGrid = (blogs, mechContainer) => {
   input.className = "width-100 searchInput shadow";
   input.placeholder = "Search...";
 
-  mechContainer.append(buttonContainer, searchContainer);
+  mechContainer.append(searchContainer, buttonContainer);
   buttonContainer.append(sortButtonDetails, filterButtonDetails);
   sortButtonDetails.append(sortButtonSummary, sortButtonUl);
   sortButtonUl.append(sortByNewest, sortByOldest);

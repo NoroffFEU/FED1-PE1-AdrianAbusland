@@ -64,12 +64,6 @@
 }
 
 /* position */
-.marginAbout {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
 .marginBackButton {
   margin-bottom: 20px;
@@ -119,7 +113,7 @@
 }
 
 .background-brown {
-  background-color: var(--brown);
+  background-color: var(--Raw-umber);
 }
 
 .color-black {

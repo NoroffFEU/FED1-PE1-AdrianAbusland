@@ -38,7 +38,7 @@ const makePage = async () => {
 
   const backButton = document.createElement("button");
   backButton.innerText = "Go Back";
-  backButton.className = "smallBrownButton position-left marginBackButton";
+  backButton.className = "buttonSmall position-left marginBackButton";
   backButton.onclick = () => {
     window.location.href = "../index.html";
   };
@@ -53,7 +53,7 @@ const makePage = async () => {
 
   const editButton = document.createElement("button");
   editButton.innerText = "Edit";
-  editButton.className = "smallBrownButton position-right";
+  editButton.className = "buttonSmall position-right";
   editButton.style.display = userInfo.name === "owner" ? "block" : "none";
   editButton.onclick = () => {
     window.location.href = "edit.html" + "?" + id;

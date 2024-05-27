@@ -1,9 +1,9 @@
 export const makeHeader = () => {
   const isFrontPage = !(
     window.location.pathname.includes("post") ||
-    window.location.pathname.includes("account") ||
-    window.location.pathname.includes("about")
+    window.location.pathname.includes("account")  
   );
+
   const prefix = isFrontPage ? "" : "../";
 
   const getUserInfo = JSON.parse(localStorage.getItem("userInfo"));
@@ -23,15 +23,14 @@ const desktopHeader = (isFrontPage, userInfo, prefix) => {
   const leftHeader = document.createElement("div");
   leftHeader.className = "flex gap10 items-center";
 
+  const logo = document.createElement("img");
+  logo.className = "cursor logo";
+  logo.alt = "logo";
+
   const loggedInAs = document.createElement("p");
   loggedInAs.innerText = "Logged in as: " + userInfo.name;
   loggedInAs.style.display = userInfo ? "block" : "none";
   loggedInAs.className = "headerTwo color-black";
-
-  const logo = document.createElement("img");
-
-  logo.className = "cursor logo";
-  logo.alt = "logo";
 
   logo.addEventListener("click", () => {
     if (isFrontPage) {
@@ -55,7 +54,7 @@ const desktopHeader = (isFrontPage, userInfo, prefix) => {
 
   const logOut = document.createElement("button");
   logOut.innerText = "Log Out";
-  logOut.className = "headerText margin cursor smallBlueButton";
+  logOut.className = "headerText margin cursor buttonSmall";
   logOut.classList.add = "hidden";
   logOut.onclick = () => {
     localStorage.removeItem("userInfo");
@@ -140,7 +139,7 @@ const tabletHeader = (isFrontPage, userInfo, prefix) => {
   const logOut = document.createElement("button");
   logOut.innerText = "Log Out";
   logOut.className = "headerText margin cursor";
-  logOut.className = "hidden smallBlueButton";
+  logOut.className = "hidden buttonSmall";
   logOut.onclick = () => {
     localStorage.removeItem("userInfo");
     if (isFrontPage) {
@@ -154,15 +153,10 @@ const tabletHeader = (isFrontPage, userInfo, prefix) => {
   logIn.innerText = "Log In";
   logIn.className = "headerTwo marginBotTop cursor styles-none";
 
-  const aboutUs = document.createElement("a");
-  aboutUs.innerText = "About Us";
-  aboutUs.className = "headerTwo marginBotTop cursor styles-none";
-
   logIn.href = prefix + "account/login.html";
   createPost.href = prefix + "post/create.html";
   home.href = prefix + "index.html";
   logo.src = prefix + "public/Logo.png";
-  aboutUs.href = prefix + "about/marley.html";
   menuImg.src = prefix + "public/Menu.png";
   logo.src = prefix + "public/Logo.png";
 
@@ -180,6 +174,6 @@ const tabletHeader = (isFrontPage, userInfo, prefix) => {
   container.append(logo, details);
   details.append(menuButton, ul);
   menuButton.appendChild(menuImg);
-  ul.append(home, aboutUs, logIn, createPost, logOut, loggedInAsContainer);
+  ul.append(home, logIn, createPost, logOut, loggedInAsContainer);
   loggedInAsContainer.appendChild(loggedInAs);
 };

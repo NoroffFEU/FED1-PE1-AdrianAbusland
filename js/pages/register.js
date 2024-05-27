@@ -52,7 +52,7 @@ const makePage = () => {
   const button = document.createElement("button");
   button.type = "submit";
   button.innerText = "Register";
-  button.className = "brownButton";
+  button.className = "buttonBig";
 
   const logInButton = document.createElement("a");
   logInButton.innerText = "Log in";
