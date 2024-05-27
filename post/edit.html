@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Name | Edit Post</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/editPostPage.css">
-    <script defer type="module" src="editPostPage.js"></script>
-</head>
-<body>
-    <header>
-        <a class="blog-name-header" href="../index.html">Blog name</a>
-        <div class="links-div-header">
-            <a class="links-header" href="../index.html">Home</a>
-            <a class="links-header" href="../account/login.html">Login</a>
-            <a class="links-header" href="../account/register.html">Signup</a>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../js/pages/edit.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1102aaadb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header></header>
     <main>
-        <form id="editPostForm">
-            <input type="text" id="postTitle" name="title" required>
-            <textarea id="postBody" name="body" required></textarea>
-            <input type="text" id="postMedia" name="media" required>
-            <button type="submit">Update Post</button>
-            <button type="button" id="deletePost">Delete Post</button>
-          </form>
+      <div id="loader" class="alternativeHeader hidden">Loading..</div>
     </main>
-</body>
+    <footer></footer>
+  </body>
 </html>

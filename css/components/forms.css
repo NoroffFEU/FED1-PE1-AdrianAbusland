@@ -1,0 +1,78 @@
+.titleInput {
+  border: 2px solid var(--Blue, #316f9e);
+  background: var(--White, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 481px;
+  height: 58px;
+  flex-shrink: 0;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  margin-left: 40px;
+  padding: 0 15px 0 15px;
+}
+
+.textInput {
+  border: 2px solid var(--Blue, #316f9e);
+  background: var(--White, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 845px;
+  height: 346px;
+  font-size: 20px;
+  padding: 15px;
+  font-family: "Playfair Display";
+}
+
+.form {
+  gap: 35px;
+  margin: 25px;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.loginForms {
+  padding: 15px;
+  border: 2px solid var(--brown);
+  color: var(--black);
+  text-align: left;
+}
+
+.searchInput {
+  background-color: var(--blue);
+  border: none;
+  padding: 6px;
+  color: var(--white);
+  font-family: "Playfair Display";
+  font-size: clamp(14px, 2vw, 22px);
+  background-image: url(../../public/Search.png);
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-size: 30px;
+  background-position: 5px center;
+  height: 43px;
+}
+
+.searchInput::placeholder {
+  color: var(--white);
+}
+
+@media screen and (max-width: 915px) {
+  .textInput {
+    width: 270px;
+    height: 300px;
+  }
+
+  .titleInput {
+    width: 270px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .inputBox {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

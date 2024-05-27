@@ -1,0 +1,17 @@
+.postImageContainer {
+  max-height: 550px;
+  margin-bottom: 10px;
+}
+
+.textBox {
+  background-color: var(--brown);
+  padding: 30px 70px 30px 70px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .textBox {
+    padding: 15px;
+  }
+}

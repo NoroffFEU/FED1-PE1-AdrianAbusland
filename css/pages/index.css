@@ -1,0 +1,116 @@
+.headlineContainer {
+  background-color: var(--brown);
+  padding: 15px 0px 15px 0;
+  flex-shrink: 0;
+}
+
+/*------------Mechanisms-------------*/
+.mechContainer {
+  margin-top: 20px;
+}
+
+.btnContainer,
+.searchContainer {
+  max-width: 389px;
+}
+
+.mechButton {
+  z-index: 2;
+  background-color: var(--blue);
+  padding: 15px 44px;
+  margin-top: 15px;
+}
+
+/*------------Grid-------------*/
+
+.hover:hover {
+  color: var(--black);
+}
+.blogPostGridContainer {
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.postImageBox {
+  max-height: 200px;
+  transition: transform 360ms ease-in-out;
+}
+
+.postImageBox:hover {
+  transform: scale(1.05);
+}
+
+.postGridImage,
+.carouselImg {
+  filter: brightness(0.5);
+}
+
+.activePage {
+  color: var(--brown);
+  font-family: Playball;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.notActive:hover {
+  font-size: 25px;
+}
+/*---------------Carousel--------------*/
+
+.slide-indicators {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover,
+.active {
+  background-color: rgb(204, 204, 204);
+  height: 12px;
+  width: 12px;
+}
+.dot:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.carouselImageContainer {
+  max-height: 500px;
+}
+
+.textBoxCarousel {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .carouselImageContainer {
+    max-height: 300px;
+  }
+
+  .carouselButtons {
+    height: 40px;
+    width: 40px;
+  }
+
+  .textBoxCarousel {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .carouselImageContainer {
+    max-height: 200px;
+  }
+  .mechButton {
+    padding: 15px 25px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+.margin {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.marginBotTop {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tabletHeader {
+  display: none;
+}
+
+.menuButton {
+  margin-right: 20px;
+}
+
+.boxMenu {
+  text-align: center;
+  background-color: var(--brown);
+  left: 0;
+  top: 105px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 2px solid var(--black);
+  gap: 25px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .tabletHeader {
+    display: flex;
+  }
+
+  .desktopHeader {
+    display: none;
+  }
+}
