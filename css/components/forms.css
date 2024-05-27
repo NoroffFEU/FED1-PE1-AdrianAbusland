@@ -41,9 +41,10 @@
 }
 
 .searchInput {
-  background-color: var(--blue);
+  background-color: var(--Raw-umber);
+  border-radius: 5px;
   border: none;
-  padding: 6px;
+  padding: 5px;
   color: var(--white);
   font-family: "Playfair Display";
   font-size: clamp(14px, 2vw, 22px);

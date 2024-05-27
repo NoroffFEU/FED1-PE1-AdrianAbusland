@@ -1,5 +1,5 @@
 .headlineContainer {
-  background-color: var(--brown);
+  background-color: var(--White);
   padding: 15px 0px 15px 0;
   flex-shrink: 0;
 }
@@ -68,7 +68,7 @@
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: var(--blue);
+  background-color: var(--Raw-umber);
   border-radius: 50%;
   display: inline-block;
 }

@@ -56,7 +56,7 @@ const makePage = (blogs) => {
 
   const mechContainer = document.createElement("div");
   mechContainer.className =
-    "mechContainer flex-wrap flex between width-100 gap10";
+    "mechContainer flex-wrap flex width-100 gap10 justify-center";
   mechContainer.id = "mechContainer flex-wrap";
 
   const blogPostGrid = document.createElement("div");
