@@ -46,7 +46,7 @@ const makeForms = (container, imageBox, blog, id) => {
   imageInput.type = "text";
   imageInput.id = "image";
   imageInput.name = "image";
-  imageInput.className = "titleInput";
+  imageInput.className = "inputField";
   imageInput.placeholder = "insert image URL here..";
   imageInput.defaultValue = blog.media.url;
   const imageInputEvent = () => {
@@ -79,7 +79,7 @@ const makeForms = (container, imageBox, blog, id) => {
   tagInput.type = "text";
   tagInput.id = "tag";
   tagInput.name = "tag";
-  tagInput.className = "titleInput";
+  tagInput.className = "inputField";
   tagInput.placeholder = "Insert a tag here..";
   tagInput.defaultValue = blog.tags;
 
@@ -91,13 +91,13 @@ const makeForms = (container, imageBox, blog, id) => {
   titleLabel.setAttribute("for", "title");
   titleLabel.className = "headerTwo";
 
-  const titleInput = document.createElement("input");
-  titleInput.className = "titleInput";
-  titleInput.type = "text";
-  titleInput.id = "title";
-  titleInput.name = "title";
-  titleInput.placeholder = "Insert text here..";
-  titleInput.defaultValue = blog.title;
+  const inputField = document.createElement("input");
+  inputField.className = "inputField";
+  inputField.type = "text";
+  inputField.id = "title";
+  inputField.name = "title";
+  inputField.placeholder = "Insert text here..";
+  inputField.defaultValue = blog.title;
 
   const textFormBox = document.createElement("div");
 
@@ -137,7 +137,7 @@ const makeForms = (container, imageBox, blog, id) => {
     submitButton
   );
   imageFormBox.append(imageLabel, imageInput);
-  titleFormBox.append(titleLabel, titleInput);
+  titleFormBox.append(titleLabel, inputField);
   tagFormBox.append(tagLabel, tagInput);
   textFormBox.append(textInput);
 

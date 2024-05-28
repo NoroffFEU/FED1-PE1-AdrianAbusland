@@ -99,7 +99,7 @@ const tabletHeader = (isFrontPage, userInfo, prefix) => {
   const logo = document.createElement("img");
 
   const loggedInAsContainer = document.createElement("div");
-  loggedInAsContainer.className = "width-100";
+  loggedInAsContainer.className = "width-100 flex justify-center";
 
   const loggedInAs = document.createElement("p");
   loggedInAs.innerText = "Logged in as: " + userInfo.name;

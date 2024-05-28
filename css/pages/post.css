@@ -1,8 +1,10 @@
 .postImageContainer {
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .textBox {
+  border-radius: 5px;
   background-color: var(--Raw-umber);
   padding: 30px 70px 30px 70px;
   margin-top: 40px;

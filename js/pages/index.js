@@ -188,25 +188,25 @@ const makeBlogPostGrid = (blogs, mechContainer) => {
   showAll.innerText = "Show All";
   showAll.className = "headerTwo cursor filter hover";
 
-  const filterByOutdoor = document.createElement("li");
-  filterByOutdoor.innerText = "Outdoor";
-  filterByOutdoor.className = "headerTwo cursor filter hover";
+  const filterByHome = document.createElement("li");
+  filterByHome.innerText = "Home";
+  filterByHome.className = "headerTwo cursor filter hover";
 
   const filterByFamily = document.createElement("li");
   filterByFamily.innerText = "Family";
   filterByFamily.className = "headerTwo cursor filter hover";
 
-  const filterByFriends = document.createElement("li");
-  filterByFriends.innerText = "Friends";
-  filterByFriends.className = "headerTwo cursor filter hover";
+  const filterByWork = document.createElement("li");
+  filterByWork.innerText = "Work";
+  filterByWork.className = "headerTwo cursor filter hover";
 
-  const filterByOwner = document.createElement("li");
-  filterByOwner.innerText = "Owner";
-  filterByOwner.className = "headerTwo cursor filter hover";
+  const filterByOutDoor = document.createElement("li");
+  filterByOutDoor.innerText = "Outdoor";
+  filterByOutDoor.className = "headerTwo cursor filter hover";
 
-  const filterByHome = document.createElement("li");
-  filterByHome.innerText = "Home";
-  filterByHome.className = "headerTwo cursor filter hover";
+  const filterByAuthor = document.createElement("li");
+  filterByAuthor.innerText = "Author";
+  filterByAuthor.className = "headerTwo cursor filter hover";
 
   const searchContainer = document.createElement("div");
   searchContainer.className = "searchContainer width-100 flex-noWrap";
@@ -226,11 +226,11 @@ const makeBlogPostGrid = (blogs, mechContainer) => {
   searchContainer.appendChild(input);
   filterButtonUl.append(
     showAll,
+    filterByHome,
     filterByFamily,
-    filterByOutdoor,
-    filterByFriends,
-    filterByOwner,
-    filterByHome
+    filterByWork,
+    filterByOutDoor,
+    filterByAuthor
   );
 
   makePagination(blogs);

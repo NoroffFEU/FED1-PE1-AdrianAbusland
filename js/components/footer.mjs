@@ -18,21 +18,21 @@ const desktopVersion = (isFrontPage) => {
 
   const instagram = document.createElement("i");
   instagram.className = "fa-brands fa-instagram fa-2xl";
-  instagram.style.color = "#9e6031";
-
-  const tikTokA = document.createElement("a");
-  tikTokA.href = "https://www.tiktok.com/@add_user_here";  //Change "@add_user_here" with you own username from tiktok
-  tikTokA.target = "_blank";
-  tikTokA.className = "marginLinks";
+  // instagram.style.color = "#8F6C50";
 
   const instagramA = document.createElement("a");
   instagramA.href = "https://www.instagram.com/add_user_here/";  //Change "add_user_here" with you own username from instagram
   instagramA.target = "_blank";
-  instagramA.className = "marginLinks";
+  instagramA.className = "footerLinks";
+
+  const tikTokA = document.createElement("a");
+  tikTokA.href = "https://www.tiktok.com/@add_user_here";  //Change "@add_user_here" with you own username from tiktok
+  tikTokA.target = "_blank";
+  tikTokA.className = "footerLinks";
 
   const tikTok = document.createElement("i");
   tikTok.className = "fa-brands fa-tiktok fa-2xl";
-  tikTok.style.color = "#9e6031";
+  // tikTok.style.color = "#8F6C50";
 
   footer.appendChild(container);
   container.append(informationBox);
