@@ -87,14 +87,14 @@ const makeCarousel = (carouselDiv, blogs) => {
   const latestPosts = blogs.slice(0, 3);
 
   const leftButton = document.createElement("img");
-  leftButton.src = "./public/Left.png";
+  leftButton.src = "./resources/Left.png";
   leftButton.alt = "left carousel button";
   leftButton.id = "prevBtn";
   leftButton.className =
     "carouselButtons position-absolute z-index2 position-left cursor prevBtn";
 
   const rightButton = document.createElement("img");
-  rightButton.src = "./public/Right.png";
+  rightButton.src = "./resources/Right.png";
   rightButton.alt = "right carousel Button";
   rightButton.id = "nextBtn";
   rightButton.className =
@@ -134,7 +134,7 @@ const makeCarousel = (carouselDiv, blogs) => {
 
     const title = document.createElement("h2");
     title.innerText = blog.title;
-    title.className = "headerTwo";
+    title.className = "headerThree";
 
     const button = document.createElement("button");
     button.innerText = "Read More";

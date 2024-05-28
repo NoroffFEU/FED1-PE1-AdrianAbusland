@@ -73,7 +73,7 @@ const desktopHeader = (isFrontPage, userInfo, prefix) => {
 
   logIn.href = prefix + "account/login.html";
   home.href = prefix + "index.html";
-  logo.src = prefix + "public/Logo.png";
+  logo.src = prefix + "resources/Logo.png";
   createPost.href = prefix + "post/create.html";
 
   if (userInfo) {
@@ -156,9 +156,9 @@ const tabletHeader = (isFrontPage, userInfo, prefix) => {
   logIn.href = prefix + "account/login.html";
   createPost.href = prefix + "post/create.html";
   home.href = prefix + "index.html";
-  logo.src = prefix + "public/Logo.png";
-  menuImg.src = prefix + "public/Menu.png";
-  logo.src = prefix + "public/Logo.png";
+  logo.src = prefix + "resources/Logo.png";
+  menuImg.src = prefix + "resources/Menu.png";
+  logo.src = prefix + "resources/Logo.png";
 
   if (userInfo) {
     createPost.style.display = "block";

@@ -5,7 +5,7 @@
   width: 481px;
   height: 58px;
   flex-shrink: 0;
-  font-family: "Playfair Display";
+  font-family: "OpenDyslexic3-Regular";
   font-size: 20px;
   margin-left: 40px;
   padding: 0 15px 0 15px;
@@ -19,7 +19,7 @@
   height: 346px;
   font-size: 20px;
   padding: 15px;
-  font-family: "Playfair Display";
+  font-family: "OpenDyslexic3-Regular";
 }
 
 .form {
@@ -46,9 +46,9 @@
   border: none;
   padding: 5px;
   color: var(--white);
-  font-family: "Playfair Display";
+  font-family: "OpenDyslexic3-Regular";
   font-size: clamp(14px, 2vw, 22px);
-  background-image: url(../../public/Search.png);
+  background-image: url(../../resources/Search.png);
   background-repeat: no-repeat;
   padding-left: 50px;
   background-size: 30px;

@@ -4,6 +4,40 @@
   flex-shrink: 0;
 }
 
+/*---------------Carousel--------------*/
+
+.slide-indicators {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: var(--Raw-umber);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover,
+.active {
+  background-color: rgb(204, 204, 204);
+  height: 12px;
+  width: 12px;
+}
+.dot:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.carouselImageContainer {
+  max-height: 500px;
+  border-radius: 5px;
+}
+
+.textBoxCarousel {
+  margin-bottom: 20px;
+}
+
 /*------------Mechanisms-------------*/
 .mechContainer {
   margin-top: 20px;
@@ -34,6 +68,7 @@
 }
 
 .postImageBox {
+  border-radius: 5px;
   max-height: 200px;
   transition: transform 360ms ease-in-out;
 }
@@ -49,7 +84,7 @@
 
 .activePage {
   color: var(--brown);
-  font-family: Playball;
+  font-family: "OpenDyslexic3-Regular";
   font-size: 25px;
   margin: 10px;
 }
@@ -57,38 +92,7 @@
 .notActive:hover {
   font-size: 25px;
 }
-/*---------------Carousel--------------*/
 
-.slide-indicators {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: var(--Raw-umber);
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot:hover,
-.active {
-  background-color: rgb(204, 204, 204);
-  height: 12px;
-  width: 12px;
-}
-.dot:hover {
-  box-shadow: 0 0 5px #fff;
-}
-.carouselImageContainer {
-  max-height: 500px;
-}
-
-.textBoxCarousel {
-  margin-bottom: 20px;
-}
 
 @media screen and (max-width: 760px) {
   .carouselImageContainer {

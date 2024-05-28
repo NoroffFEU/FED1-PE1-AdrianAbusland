@@ -5,6 +5,7 @@ export const handleRegistration = () => {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
+
     const MIN_PASSWORD_LENGTH = 8;
     const formData = new FormData(form);
     const registerData = {
@@ -22,16 +23,24 @@ export const handleRegistration = () => {
       alert(`Email must be a stud.noroff.no email.`);
       return;
     }
-    const response = await doFetch(
-      "POST",
-      "https://v2.api.noroff.dev/auth/register",
-      registerData
-    );
-    if (response) {
-      alert(`Successfully created user "${registerData.name}"`);
-      window.location.href = "./login.html";
-    } else {
-      alert("Something went wrong!");
+
+    try {
+      const response = await doFetch(
+        "POST",
+        "https://v2.api.noroff.dev/auth/register",
+        registerData
+      );
+
+      if (response) {
+        alert(`Successfully created user "${registerData.name}"`);
+        window.location.href = "./login.html";
+      } else {
+        alert("Something went wrong!");
+      }
+    } catch (error) {
+      console.error("Error during registration:", error);
+      alert("An error occurred during registration. Please try again.");
     }
   });
 };
+
