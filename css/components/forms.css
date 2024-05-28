@@ -1,7 +1,7 @@
 .inputField {
   border-radius: 5px;
   border: 2px solid var(--Raw-umber);
-  background: var(--White, #fff);
+  background: var(--White);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 481px;
   height: 58px;
@@ -14,7 +14,7 @@
 
 .textInput {
   border: 2px solid var(--Raw-umber);
-  background: var(--White, #fff);
+  background: var(--White);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 845px;
   height: 346px;
