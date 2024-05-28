@@ -31,16 +31,11 @@ const makePage = (blogs) => {
   const container = document.createElement("div");
   container.className = "container";
 
-  const welcomeTitle = document.createElement("h2");
-  welcomeTitle.innerText = "Welcome Back " + userInfo.name;
-  welcomeTitle.className = "headerOne marginBackButton";
-  welcomeTitle.style.display = getUserInfo ? "block" : "none";
-
   const headlineContainerOne = document.createElement("div");
   headlineContainerOne.className = "headlineContainer width-100";
 
   const recentPostsHeadline = document.createElement("h1");
-  recentPostsHeadline.innerText = "Recent Posts";
+  recentPostsHeadline.innerText = "Latest Posts";
   recentPostsHeadline.className = "headerOne";
 
   const carouselDiv = document.createElement("div");
@@ -68,7 +63,6 @@ const makePage = (blogs) => {
 
   main.appendChild(container);
   container.append(
-    welcomeTitle,
     headlineContainerOne,
     carouselDiv,
     headlineContainerTwo,

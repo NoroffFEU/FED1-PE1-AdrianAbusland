@@ -58,7 +58,7 @@
 /*------------Grid-------------*/
 
 .hover:hover {
-  color: var(--black);
+  color: var(--Licorice);
 }
 .blogPostGridContainer {
   grid-gap: 1em;

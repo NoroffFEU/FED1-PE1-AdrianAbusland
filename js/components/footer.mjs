@@ -18,7 +18,6 @@ const desktopVersion = (isFrontPage) => {
 
   const instagram = document.createElement("i");
   instagram.className = "fa-brands fa-instagram fa-2xl";
-  // instagram.style.color = "#8F6C50";
 
   const instagramA = document.createElement("a");
   instagramA.href = "https://www.instagram.com/add_user_here/";  //Change "add_user_here" with you own username from instagram
@@ -32,7 +31,6 @@ const desktopVersion = (isFrontPage) => {
 
   const tikTok = document.createElement("i");
   tikTok.className = "fa-brands fa-tiktok fa-2xl";
-  // tikTok.style.color = "#8F6C50";
 
   footer.appendChild(container);
   container.append(informationBox);
