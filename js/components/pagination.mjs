@@ -28,8 +28,6 @@ const makePaginationNumbers = (pages, blogs, currentPage, container) => {
 };
 
 const updatePageNumber = (currentPage, pageNumber, index) => {
-  console.log("currentPage: ", currentPage);
-  console.log("index:", index);
   const oldPage = document.querySelector(".activePage");
   if (oldPage) {
     oldPage.classList.remove("activePage");
