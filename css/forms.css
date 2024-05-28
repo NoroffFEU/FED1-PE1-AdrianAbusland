@@ -50,7 +50,7 @@
   color: var(--white);
   font-family: "OpenDyslexic3-Regular";
   font-size: clamp(14px, 2vw, 22px);
-  background-image: url(../../resources/Search.png);
+  background-image: url(../resources/Search.png);
   background-repeat: no-repeat;
   padding-left: 50px;
   background-size: 30px;

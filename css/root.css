@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: OpenDyslexic3-Regular;
-  src: url(../../resources/OpenDyslexic3-Regular.ttf);
+  src: url(../resources/OpenDyslexic3-Regular.ttf);
 }
 
 @font-face {
   font-family: OpenDyslexic3-Bold;
-  src: url(../../resources/OpenDyslexic3-Bold.ttf);
+  src: url(../resources/OpenDyslexic3-Bold.ttf);
 }
 
 body {
