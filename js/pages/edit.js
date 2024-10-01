@@ -6,7 +6,7 @@ const runPage = async () => {
   const id = window.location.search.slice(1);
   const blog = await doFetch(
     "GET",
-    "https://v2.api.noroff.dev/blog/posts/owner/" + id
+    "https://v2.api.noroff.dev/blog/posts/TestAdrian1/" + id
   );
   makePage(blog, id);
   makeHeader();

@@ -28,7 +28,7 @@ const makePage = async () => {
   ];
   const blog = await doFetch(
     "GET",
-    "https://v2.api.noroff.dev/blog/posts/owner/" + id
+    "https://v2.api.noroff.dev/blog/posts/TestAdrian1/" + id
   );
 
   const main = document.querySelector("main");
@@ -54,7 +54,7 @@ const makePage = async () => {
   const editButton = document.createElement("button");
   editButton.innerText = "Edit";
   editButton.className = "buttonSmall position-right";
-  editButton.style.display = userInfo.name === "owner" ? "block" : "none";
+  editButton.style.display = userInfo.name === "TestAdrian1" ? "block" : "none";
   editButton.onclick = () => {
     window.location.href = "edit.html" + "?" + id;
   };

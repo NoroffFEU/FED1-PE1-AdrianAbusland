@@ -20,7 +20,7 @@ const runPage = async () => {
 
 const blogs = await doFetch(
   "GET",
-  "https://v2.api.noroff.dev/blog/posts/owner"
+  "https://v2.api.noroff.dev/blog/posts/TestAdrian1"
 );
 
 const makePage = (blogs) => {

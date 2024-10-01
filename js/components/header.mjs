@@ -46,7 +46,7 @@ const desktopHeader = (isFrontPage, userInfo, prefix) => {
   const createPost = document.createElement("a");
   createPost.innerText = "+ Create Post";
   createPost.className = "headerText margin cursor";
-  createPost.style.display = userInfo.name === "owner" ? "block" : "none";
+  createPost.style.display = userInfo.name === "TestAdrian1" ? "block" : "none";
 
   const home = document.createElement("a");
   home.innerText = "Home";
